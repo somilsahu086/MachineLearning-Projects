@@ -1,0 +1,15 @@
+[theme]
+# Main background color (App ka main background)
+backgroundColor = "#0E1117"
+
+# Secondary background color (Sidebar aur input boxes ke liye)
+secondaryBackgroundColor = "#262730"
+
+# Main text color
+textColor = "#FAFAFA"
+
+# Accent/Primary color (Buttons, active sliders aur highlights ke liye)
+primaryColor = "#FF4B4B"
+
+# Font style
+font = "sans serif"
