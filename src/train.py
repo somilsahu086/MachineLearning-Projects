@@ -13,7 +13,6 @@ def train_model():
     rf = RandomForestRegressor(n_estimators=100, random_state=42)
     rf.fit(X_train, y_train)
     
-    # Evaluation
     y_pred = rf.predict(X_test)
     r2 = r2_score(y_test, y_pred) * 100
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
@@ -22,7 +21,6 @@ def train_model():
     print(f"R2 Score: {r2:.2f}%")
     print(f"RMSE: {rmse:.4f}")
     
-    # Save Model Locally (It will be ignored by Git automatically due to .gitignore)
     os.makedirs('../models', exist_ok=True)
     model_path = '../models/house_price_model.pkl'
     joblib.dump(rf, model_path)
